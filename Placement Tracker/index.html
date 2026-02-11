@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Placement / Internship Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Smart Placement / Internship Tracker</h1>
+</header>
+
+<main class="container">
+
+    
+    <section class="form-section">
+        <h2 class="center-title">Fill Application</h2>
+
+        <form id="appForm">
+            <select id="company" required>
+                <option value="">Select Company</option>
+                <option>Infosys</option>
+                <option>Microsoft</option>
+                <option>Google</option>
+                <option>Amazon</option>
+                <option>TCS</option>
+                <option>Wipro</option>
+                <option>Accenture</option>
+                <option>IBM</option>
+            </select>
+
+            <select id="role" required>
+                <option value="">Select Role</option>
+                <option>Software Engineer</option>
+                <option>Frontend Developer</option>
+                <option>Backend Developer</option>
+                <option>Full Stack Developer</option>
+                <option>Data Analyst</option>
+                <option>Intern</option>
+            </select>
+
+            <select id="stage">
+                <option>Applied</option>
+                <option>Online Assessment</option>
+                <option>Interview</option>
+                <option>Offer</option>
+                <option>Rejected</option>
+            </select>
+
+            <select id="result">
+                <option>Pending</option>
+                <option>Cleared</option>
+                <option>Rejected</option>
+            </select>
+
+            <input type="date" id="date" required>
+
+            <button type="submit">Add Application</button>
+        </form>
+    </section>
+
+    
+    <section class="list-section">
+        <h2>Applications List</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Company</th>
+                    <th>Role</th>
+                    <th>Stage</th>
+                    <th>Result</th>
+                    <th>Applied Date</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="appList"></tbody>
+        </table>
+    </section>
+
+    
+    <section class="summary-section">
+        <h2>Summary</h2>
+        <div class="summary-box">
+            <div>Total Applications: <span id="total">0</span></div>
+            <div>Interviews: <span id="interviews">0</span></div>
+            <div>Offers: <span id="offers">0</span></div>
+            <div>Rejections: <span id="rejections">0</span></div>
+        </div>
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
